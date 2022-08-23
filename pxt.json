@@ -11,7 +11,9 @@
         "gatorlight.ts",
         "gatorlight.cpp",
         "shims.d.ts",
-        "enums.d.ts"
+        "enums.d.ts",
+        "main.ts",
+        "main.blocks"
     ],
     "testFiles": [],
     "public": true
