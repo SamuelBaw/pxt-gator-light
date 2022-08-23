@@ -4,7 +4,8 @@
     "description": "SparkFun gator:light Temperature Sensor",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "microphone": "*"
     },
     "files": [
         "README.md",
@@ -16,5 +17,13 @@
         "main.blocks"
     ],
     "testFiles": [],
-    "public": true
+    "public": true,
+    "targetVersions": {
+        "target": "5.0.12",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
 }
