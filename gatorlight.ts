@@ -27,18 +27,31 @@ namespace gatorlight {
     /**
     * Reads the number
     */
-    //% weight=30 blockId="gatorlight_light" block="Get light on pin %pin | in %gatorlightType"
-    export function light(): number{
-      let ADCVal = 1
-      return getLux(ADCVal)
+    //% weight=30 blockId="xPos" block="Get LED xPos"
+    export function xPos(): number{
+      
+        return getXPos()
       }
     
+    //% weight=30 blockId="yPos" block="Get LED yPos"
+    export function yPos(): number {
+
+        return getYPos()
+    }
 
 	/**
      * Function used for simulator, actual implementation is in gatorlight.cpp
      */
-    //% shim=gatorlight::getLux
-    function getLux(ADCVal: number) {
+    //% shim=gatorlight::getXPos
+    function getXPos(): number {
+        // Fake function for simulator
+        return 0
+    }
+    /**
+     * Function used for simulator, actual implementation is in gatorlight.cpp
+     */
+    //% shim=gatorlight::getYPos
+    function getYPos(): number {
         // Fake function for simulator
         return 0
     }
